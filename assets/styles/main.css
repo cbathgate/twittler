@@ -1,6 +1,162 @@
-body {
-	background-color: #F5F8FA;
-	font-family: "Open Sans", Helvetica, sans-serif;
+/* 
+  =======================
+  BODY
+  =======================
+*/
 
-	/*#981CEB Color for main material*/
+body {
+  background-color: #F5F8FA;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 12pt;
 }
+
+/* 
+  =======================
+  NAVIGATION
+  =======================
+*/
+
+nav {
+  background: white;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  height: 100px;
+  text-align: center;
+}
+
+.btn, .home {
+  background: none;
+  color: #981CEB;
+}
+
+.btn {
+  border-color: #E1E8ED;
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: 12pt;
+}
+
+.btn:hover{
+  border-color: black;
+  color: black;
+}
+
+.btn:focus{
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  border-color: black;
+  box-shadow: none;
+  color: black;
+}
+
+.home {
+  border: none;
+  display: block;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  height: 60px;
+  margin: 0 auto;
+  width: 325px;
+}
+
+.home:focus {
+  color: #981CEB;
+}
+
+/* 
+  =======================
+  PANEL ELEMENTS
+  =======================
+*/
+
+.container {
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+  width: 80%;
+}
+
+.left-panel, .tweet-panel, .right-panel {
+  height: 800px;
+}
+
+.left-panel {
+  float: left;
+  width: 30%;
+}
+
+.tweet-panel {
+  float: right;
+  text-align: center;
+  width: 40%;
+}
+
+.right-panel {
+  float: right;
+  width: 30%;
+}
+
+.tweet-input {
+  background-color: white;
+  border-color: #E1E8ED;
+  border-radius: 0 0 5px 5px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  height: 700px;
+  margin: 0 auto;
+  overflow: auto;
+  text-align: center;
+  width: 98%;
+}
+
+/* 
+  =======================
+  IMAGES
+  =======================
+*/
+
+img {
+  width: 63%;
+}
+
+.left-image {
+  float: right;
+}
+
+.right-image {
+  float: left;
+}
+
+.top-image {
+  display: block;
+  margin-top: 2px;
+  width: 100%;
+}
+
+/* 
+  =======================
+  TWEETS
+  =======================
+*/
+
+.twt, .time {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.twt {
+  border-color: #E1E8ED;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  padding: 10px 10px 15px 10px;
+}
+
+.time {
+  color: #abb1b5;
+  font-size: 10px;
+  padding-left: 15px;
+  padding-top: 3px;
+}
+
