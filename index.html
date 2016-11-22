@@ -4,31 +4,37 @@
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/flavicon.png" type="image/x-icon"/>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="main.js"></script>
     <title>Twittler</title>
   </head>
   <body>
-    <nav></nav>
-    <div></div>
-    <script>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
+    <nav>
+        <button class="btn home">Twittler</button>
+    </nav>
 
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
+    <div class = "container">
 
-      });
+      <div class = "left-panel">
+        <img class = "left-image" src="assets/images/left.png">
+      </div>
 
-    </script>
+      <div class = "right-panel">
+        <img class = "right-image" src="assets/images/right.png">
+      </div>
+
+      <div class = "tweet-panel">
+        <div>
+          <img class="top-image" src="assets/images/top.png">
+        </div>
+        <div class= "tweet-input"></div>
+      </div>
+      
+    </div>
+
   </body>
 </html>
