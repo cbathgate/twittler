@@ -36,7 +36,8 @@ $(document).ready(function(){
   var home = function() {
     makeTweets(streams.home);
   };
-
+  
+  //default
   var twittlerStream = setInterval(home,1000);
   
   //filters by username
